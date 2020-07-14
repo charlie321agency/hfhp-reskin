@@ -1,0 +1,3445 @@
+/*Vendors*/
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+#iw-vpreview {
+    position: inherit !important;
+    display:none!important;
+}
+.cfdebug{
+    display:none;
+}
+
+.icon{
+	font:inherit!important;
+}
+li:hover .icon{
+  display: block!important;
+}
+li .icon:before {
+    display: inline-block;
+    margin-right: .5em;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 20px;
+    top: 50%;
+    position: absolute;
+}
+                       
+.hub__query--address label, .hub__query--location label {
+	display:block;
+}
+                         
+                         
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900");
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+/* Skip to Main Content link
+   ========================================================================== */
+
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/*Base*/
+/*****************************
+FONTS
+*****************************/
+/****************************
+END FONTS
+****************************/
+h1,
+h2,
+h3,
+h5 {
+  color: #1a2857; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+select,
+option,
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; }
+
+ul li {
+  list-style-type: square;
+  /*Will this break everything?*/
+  font-size: 16px; }
+
+ol li {
+  font-size: 16px; }
+
+.body__container li {
+  margin: 5px 0; }
+
+p,
+li,
+label {
+  font-family: 'Montserrat', sans-serif; }
+
+p strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 35px; }
+  h3 {
+    font-size: 22px; }
+  h4 {
+    font-size: 16px; } }
+
+h1 {
+  line-height: 60px; }
+
+h2 {
+  line-height: 40px; }
+
+h3 {
+  line-height: 28px; }
+
+h4 {
+  line-height: 25px; }
+
+h5 {
+  line-height: 28px;
+  font-size: 24px;
+  margin: 20px 0; }
+
+p,
+label {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 25px; }
+
+button {
+  font-size: 16px; }
+
+a {
+  color: inherit; }
+
+blockquote {
+  border-left: 0; }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 35px; }
+  h2 {
+    font-size: 26px; }
+  h3 {
+    font-size: 20px; }
+  h4 {
+    font-size: 16px; } }
+
+a:hover {
+  color: inherit; }
+
+.copyright {
+  font-size: 12px; }
+
+.page__body a,
+.bluelink,
+.blue-ul li {
+  color: #061b5c;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+ol {
+  list-style-type: decimal; }
+
+ol li {
+  padding-left: 5px; }
+
+/*******************************
+UTILITY CLASSES
+*******************************/
+.hero__breadcrumb:before {
+  content: '\f015';
+  font-family: "FontAwesome";
+  color: #1a2857; }
+
+.hero__breadcrumb {
+  color: #9e9e9e; }
+
+.body-width {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; }
+
+select:focus,
+input:focus {
+  border: 1px solid black;
+  border-color: #1a2857 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  -o-text-overflow: '';
+     text-overflow: ''; }
+
+select::-ms-expand {
+  display: none; }
+
+select:disabled::-ms-expand {
+  display: none; }
+
+.body__wrapper-home {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #F0F0F0; }
+
+.body__container {
+  margin: 35px auto;
+  background-color: #FFF; }
+
+.page__body {
+  padding-top: 35px;
+  padding-bottom: 15px; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.height-100 {
+  height: 100%; }
+
+.vertically-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+@media (min-width: 768px) {
+  .vertically-center-desktop {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); } }
+
+.input-border {
+  border: 1px solid #C6C6C6;
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center; } }
+
+.match-ul-padding {
+  padding-left: 25px; }
+
+.frutiger-italic {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: italic; }
+
+.frutiger-light {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 300; }
+
+.main__header-image {
+  width: 100%; }
+
+.mobile__slider {
+  display: none; }
+
+.banner-image {
+  overflow: hidden; }
+
+.goog-te-gadget-simple {
+  background-color: #1a2857 !important;
+  border: none !important; }
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #FFF !important; }
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  color: #FFF !important;
+  font-size: 12px !important; }
+
+.iframe-container {
+  position: relative;
+  height: 0;
+  overflow: hidden; }
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.iframe-container-16x9 {
+  padding-bottom: 56.25%; }
+
+/**UL and LI styles**/
+.pdf {
+  list-style: none; }
+
+.pdf > li {
+  padding-left: 1.3em;
+  list-style: none; }
+
+.pdf > li:before {
+  content: "\f1c1";
+  /* FontAwesome Unicode */
+  font-family: "FontAwesome";
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */ }
+
+.pdf-li {
+  padding-left: 1.3em;
+  list-style: none;
+  list-style-type: none; }
+
+.pdf-li:before {
+  content: "\f1c1";
+  /* FontAwesome Unicode */
+  font-family: "FontAwesome";
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */ }
+
+.no-anchor {
+  color: #000 !important;
+  text-decoration: none !important;
+  font-weight: 400 !important; }
+
+.no-type > li {
+  list-style-type: none; }
+
+.extra-list-padding li {
+  margin-bottom: 10px; }
+
+.table__container p {
+  margin: 10px 0; }
+
+.table__grey--column {
+  background-color: #F0F0F0; }
+
+.select-carat {
+  position: absolute;
+  top: 5px;
+  right: 15px; }
+
+.select-carat:after {
+  font-family: "FontAwesome";
+  content: "\f107"; }
+
+.section__header {
+  background-color: #1a2857;
+  color: #FFF;
+  text-align: center;
+  padding: 10px; }
+
+/**Bootstrap 5 columns hack**/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.col-xs-5ths {
+  width: 20%;
+  float: left; }
+
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left; } }
+
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left; } }
+
+/*End bootstrap hack*/
+@media (max-width: 992px) {
+  .body__container {
+    padding: 0 10px; } }
+
+@media (max-width: 768px) {
+  .desktop__slider {
+    display: none; }
+  .mobile__slider {
+    display: block; }
+  .body__container {
+    margin-bottom: 0; }
+  .body__container-with-slider {
+    margin-top: 75px; }
+  .body__wrapper {
+    padding-left: 0;
+    padding-right: 0; }
+  .banner-image img {
+    width: 130%; }
+  .col-sm-5ths {
+    width: 20%;
+    float: left; } }
+
+@media (max-width: 500px) {
+  .banner-image img {
+    width: 160%; } }
+
+/*Components*/
+/*******************************
+HEADER
+*******************************/
+/**
+Header Top
+**/
+.header__top {
+  background-color: #1a2857; }
+
+.header__top-ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: right; }
+
+.header__top-li {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #FFF;
+  display: inline-block;
+  padding: 0 10px;
+  margin: 7px 0;
+  font-size: 12px; }
+  .header__top-li p {
+    font-size: 12px; }
+
+.header__top-ul p {
+  margin-bottom: 0; }
+
+.header__top-li img {
+  margin-right: 5px; }
+
+.header__top-giving {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF; }
+
+.header__top-account,
+.header__top--hub,
+.header__top--home
+.header__top-help {
+  border-right: 1px solid #FFF; }
+
+.header__top-ul .dropdown-menu {
+  left: auto !important;
+  right: -11px;
+  top: 24px;
+  border-top: none;
+  min-width: 300px;
+  border-top-right-radius: 0; }
+
+.header__top-dropdown {
+  padding: 20px 15px; }
+  .header__top-dropdown li {
+    position: relative;
+    color: #FFF;
+    background-color: #1a2857;
+    margin: 5px 0;
+    list-style-type: none !important; }
+    .header__top-dropdown li i {
+      position: absolute;
+      right: 10px;
+      top: 13px;
+      font-size: 20px;
+      font-weight: bold; }
+    .header__top-dropdown li a {
+      text-decoration: none;
+      color: #FFF !important;
+      padding: 14px 10px !important; }
+      .header__top-dropdown li a:hover, .header__top-dropdown li a:focus {
+        color: #1a2857 !important; }
+    .header__top-dropdown li:hover, .header__top-dropdown li:focus {
+      color: #1a2857; }
+      .header__top-dropdown li:hover a, .header__top-dropdown li:focus a {
+        color: #1a2857 !important; }
+
+.header__selected {
+  background-color: #FFF;
+  margin-left: 1px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #1a2857;
+  line-height: 29px;
+  border-right: none !important; }
+
+#top-header-dropdown span {
+  margin-left: 3px;
+  font-size: 11px; }
+
+#top-header-dropdown {
+  cursor: pointer; }
+
+/**
+Header Bottom
+**/
+.header__bottom {
+  border-bottom: 1.5px solid #dddddd; }
+
+.header__bottom-row {
+  height: 100px; }
+
+.logo--desktop img {
+  height: 170px; }
+
+@media (max-width: 901px) {
+  .logo--desktop {
+    display: none; } }
+
+@media (min-width: 900px) {
+  .logo--mobile {
+    display: none; } }
+
+.header__bottom-ul {
+  text-align: center;
+  padding-left: 0;
+  z-index: 2; }
+  .header__bottom-ul li {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 14px; }
+  .header__bottom-ul li:last-child {
+    padding-right: 0; }
+  .header__bottom-ul a {
+    color: #1a2857;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; }
+
+.header__bottom-search {
+  text-align: right; }
+  .header__bottom-search input {
+    width: 100%;
+    padding: 10px 7px;
+    border: none; }
+  .header__bottom-search input::-webkit-input-placeholder {
+    color: #e1e1e1; }
+  .header__bottom-search input::-moz-placeholder {
+    color: #e1e1e1; }
+  .header__bottom-search input:-ms-input-placeholder {
+    color: #e1e1e1; }
+  .header__bottom-search input::-ms-input-placeholder {
+    color: #e1e1e1; }
+  .header__bottom-search input::placeholder {
+    color: #e1e1e1; }
+  .header__bottom-search button {
+    background-color: #f5f5f5;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #C6C6C6;
+    padding: 0 20px;
+    color: #d6d6d6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    .header__bottom-search button:hover {
+      color: #FFF;
+      background-color: #1a2857; }
+    @media (max-width: 1170px) {
+      .header__bottom-search button {
+        padding: 0 15px; } }
+
+.header__sub-dropdown {
+  z-index: 2;
+  padding: 0 !important; }
+  .header__sub-dropdown li {
+    display: block; }
+    .header__sub-dropdown li a {
+      padding: 15px 15px !important; }
+  .header__sub-dropdown li:hover,
+  .header__sub-dropdown li:hover a,
+  .header__sub-dropdown a:hover {
+    color: #FFF !important;
+    background-color: #1a2857 !important; }
+
+#searchform {
+  margin-bottom: 0; }
+
+/**
+MOBILE HEADER
+**/
+.mobile-navigation {
+  display: none; }
+
+@media (max-width: 1200px) {
+  .header__bottom-ul li {
+    font-size: 14px; }
+  .header__bottom-image img {
+    max-width: 100%;
+    height: auto; } }
+
+@media (max-width: 1050px) {
+  .header__bottom-ul li {
+    font-size: 12px;
+    padding-right: 5px; } }
+
+@media (max-width: 900px) {
+  .desktop-navigation {
+    display: none; }
+  .mobile-navigation {
+    display: block; }
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0px 3px 10px 2px lightgrey;
+            box-shadow: 0px 3px 10px 2px lightgrey;
+    z-index: 999999; }
+  .body__wrapper {
+    padding-top: 90px; }
+  .header__bottom-row {
+    height: 90px; }
+  .header__bottom-image img {
+    height: 50px; } }
+
+.header-image {
+  position: relative;
+  width: 100%; }
+
+/**
+MOBILE NAVIGATION
+**/
+.menu-wrap {
+  background-color: rgba(26, 40, 87, 0.95);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 85vw;
+  margin-right: -85vw;
+  font-size: 1em;
+  font-weight: 700;
+  overflow: auto;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 10; }
+
+.menu-show {
+  margin-right: 0;
+  -webkit-box-shadow: 4px 2px 15px 1px #B9ADAD;
+          box-shadow: 4px 2px 15px 1px #B9ADAD; }
+
+.menu-sidebar {
+  margin: 55px 0 80px 0px;
+  position: relative;
+  top: 70px; }
+
+.menu-sidebar li {
+  padding: 18px 22px 18px; }
+
+.menu-sidebar li > a:nth-child(1) {
+  color: #C5C5C5;
+  font-size: 1.18em;
+  position: relative; }
+
+.menu-sidebar li > a:hover::after {
+  background-position: -100% 0; }
+
+.menu-sidebar .menu-item-has-children {
+  position: relative; }
+
+.menu-sidebar .menu-item-has-children .sub-menu {
+  display: none; }
+
+.sidebar-menu-arrow::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  padding: 10px;
+  color: #FFFA3B;
+  position: relative; }
+
+.sidebar-menu-arrow:hover::after {
+  cursor: pointer;
+  color: #fff; }
+
+.sidebar-menu-arrow:active::after {
+  top: 2px; }
+
+/*Hamburger Button*/
+.toggle-button {
+  position: fixed;
+  width: 44px;
+  height: 40px;
+  top: 35px;
+  right: 80px;
+  padding: 4px;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 15; }
+
+.toggle-button:hover {
+  cursor: pointer; }
+
+.toggle-button .menu-bar {
+  position: absolute;
+  border-radius: 2px;
+  width: 80%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.toggle-button .menu-bar-top {
+  border: 4px solid #555;
+  border-bottom: none;
+  top: 0; }
+
+.toggle-button .menu-bar-middle {
+  height: 4px;
+  background-color: #555;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px; }
+
+.toggle-button .menu-bar-bottom {
+  border: 4px solid #555;
+  border-top: none;
+  top: 22px; }
+
+.button-open {
+  right: 60px; }
+
+.button-open .menu-bar-top {
+  border-color: #fff;
+  -ms-transform: rotate(45deg) translate(8px, 8px);
+  -webkit-transform: rotate(45deg) translate(8px, 8px);
+          transform: rotate(45deg) translate(8px, 8px);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.button-open .menu-bar-middle {
+  background-color: #fff;
+  -webkit-transform: translate(230px);
+      -ms-transform: translate(230px);
+          transform: translate(230px);
+  -webkit-transition: .1s ease-in;
+  -o-transition: .1s ease-in;
+  transition: .1s ease-in;
+  opacity: 0; }
+
+.button-open .menu-bar-bottom {
+  border-color: #fff;
+  -ms-transform: rotate(-45deg) translate(7px, -7px);
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.menu-sidebar ul {
+  padding-left: 0; }
+
+.menu-sidebar li {
+  list-style-type: none;
+  color: #FFF; }
+
+.menu-sidebar li a {
+  display: block;
+  color: #FFF !important; }
+
+.mobile__sidebar > li {
+  border-bottom: 1px solid #C5C5C5; }
+  .mobile__sidebar > li a {
+    text-decoration: none; }
+
+.menu-chevron {
+  color: #FFF;
+  position: absolute;
+  right: 10px;
+  font-size: 22px !important; }
+
+.mobile-search {
+  width: 80%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  position: relative;
+  color: #3f3f3e;
+  margin-bottom: 20px; }
+
+.mobile-search input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  top: 0;
+  height: 30px; }
+
+.mobile-search button {
+  background-color: transparent;
+  border: 5px solid transparent;
+  color: #1a2857; }
+
+.mobile-search input::-webkit-input-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input::-moz-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input:-ms-input-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input::-ms-input-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input::placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input::-webkit-input-placeholder-shown {
+  color: #1a2857 !important; }
+
+.mobile-search input::-moz-placeholder-shown {
+  color: #1a2857 !important; }
+
+.mobile-search input:-ms-input-placeholder-shown {
+  color: #1a2857 !important; }
+
+.mobile-search input::-ms-input-placeholder-shown {
+  color: #1a2857 !important; }
+
+.mobile-search input::placeholder-shown {
+  color: #1a2857 !important; }
+
+.mobile-search input::-webkit-input-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input:-moz-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input::-moz-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-search input:-ms-input-placeholder {
+  color: #1a2857 !important; }
+
+.mobile-status {
+  margin-left: 45px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; }
+
+.white-text {
+  color: #fff; }
+
+.mobile-nav__img {
+  width: 84%;
+  margin-left: 8%;
+  margin-bottom: 20px; }
+
+.mobile__nav-icon:after {
+  font-family: "FontAwesome";
+  content: '\f068';
+  color: #FFF;
+  float: right; }
+
+.mobile__nav-icon.collapsed:after {
+  content: '\f067';
+  float: right; }
+
+.main__button {
+  border: 1px solid #1a2857 !important;
+  background-color: #1a2857;
+  color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;}
+
+.main__button:hover {
+  background-color: #FFF !important;
+  color: #1a2857 !important;
+  border: 1px solid #1a2857 !important; }
+
+.main__button-md {
+  padding: 10px 60px; }
+
+.main__button-md i {
+  margin-left: 7px;
+  font-size: 18px; }
+
+@media (max-width: 600px) {
+  .btn__container {
+    text-align: center; }
+  .main__button-md {
+    padding: 10px;
+    width: 85%; } }
+
+.bottom {
+  margin-bottom: 30px; }
+
+/***********************
+SURVEY BUTTON
+***********************/
+.survey-link {
+  background-color: #FFF;
+  color: #1a2857;
+  float: left;
+  float: left;
+  margin-top: 6px;
+  padding: 2px 20px 1px 20px;
+  border-radius: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; }
+
+.mobile-survey-link {
+  background-color: #1a2857;
+  text-align: center;
+  width: 100vw; }
+
+.mobile-survey-link a {
+  color: #FFF;
+  text-decoration: none; }
+
+.mobile-survey-link p {
+  width: 100vw;
+  padding: 5px 0;
+  margin-bottom: 0; }
+
+/*******************************
+FOOTER
+*******************************/
+/**
+General Footer Styles
+**/
+.footer__links {
+  text-align: center;
+  margin-bottom: 30px; }
+  .footer__links li {
+    display: inline-block;
+    border-right: 1px solid #000;
+    padding: 0 10px 0 7px;
+    color: #1a2857;
+    font-weight: 500; }
+  .footer__links li:last-child {
+    border-right: none; }
+
+.footer__top p {
+  text-decoration: underline;
+  margin-bottom: 40px; }
+
+@media (min-width: 768px) {
+  footer {
+    border: 1.5px solid #dddddd; } }
+
+@media (max-width: 500px) {
+  .footer__links li {
+    display: block;
+    border-right: 0;
+    padding: 0;
+    margin-bottom: 8px; } }
+
+footer {
+  padding-top: 40px; }
+
+footer ul {
+  padding-left: 0; }
+
+footer li {
+  font-family: 'Montserrat', sans-serif;
+  list-style-type: none;
+  padding-bottom: 10px;
+  font-size: 14px; }
+
+footer h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #1a2857;
+  font-size: 16px; }
+
+/**
+Footer Bottom
+**/
+.footer__bottom {
+  background-color: #1a2857;
+  color: #FFF;
+  text-align: center; }
+
+.footer__bottom-container {
+  padding: 10px 0; }
+
+.footer__bottom-container li {
+  display: inline-block;
+  padding: 0px 10px; }
+
+.footer__bottom-container li:not(:last-child) {
+  border-right: 1px solid white; }
+
+/**This is for the three-column layout with links at the bottom of the body, shown on the About Us page.
+I wasn't sure how else to describe this section....my bad for the poor naming scheme
+**/
+@media (min-width: 900px) {
+  .moreinfo__container {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 50px;
+    min-height: 275px; } }
+
+.moreinfo__mobile {
+  display: none; }
+
+.moreinfo__top {
+  padding: 20px 20px 0px 30px; }
+  .moreinfo__top h2 {
+    font-weight: normal; }
+    .moreinfo__top h2 span {
+      font-weight: 700; }
+  .moreinfo__top hr {
+    width: 65px;
+    margin-left: 0;
+    border-top: 1px solid #1a2857;
+    margin-top: 5px; }
+
+.moreinfo__bottom {
+  padding: 0px 0px 30px 0px; }
+  .moreinfo__bottom li {
+    color: #1a2857;
+    font-weight: 700;
+    padding: 6px 0; }
+
+.moreinfo__three > div:nth-child(2) {
+  border-right: 1.5px solid #dadada;
+  border-left: 1.5px solid #dadada; }
+
+@media (max-width: 1200px) {
+  .moreinfo__container {
+    left: 0px; } }
+
+@media (max-width: 900px) {
+  .moreinfo__container {
+    background-color: #FFF;
+    margin: 20px 0; }
+  .moreinfo__bottom {
+    display: none; }
+  .moreinfo__mobile {
+    display: block; }
+  .moreinfo__top {
+    padding: 0; }
+  .moreinfo__mobile button {
+    width: 500px;
+    text-align: left;
+    border: 1px solid #000;
+    background-color: #FFF;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px 15px; }
+    .moreinfo__mobile button span {
+      color: #cccccc; }
+    .moreinfo__mobile button i {
+      float: right;
+      font-size: 18px; }
+  .moreinfo__mobile-dropdown {
+    border-radius: 10px; }
+    .moreinfo__mobile-dropdown li {
+      list-style-type: none;
+      width: 500px;
+      margin: 7px 0;
+      font-size: 16px; }
+    .moreinfo__mobile-dropdown a {
+      white-space: normal !important; } }
+
+@media (max-width: 600px) {
+  .moreinfo__mobile-dropdown {
+    width: 100%; }
+    .moreinfo__mobile-dropdown li {
+      width: 100%; }
+  .moreinfo__mobile button {
+    width: 100%; } }
+
+@media (min-width: 900px) {
+  .hero {
+    /*This background IMG is default for hero sections.  It can be overwritten below with ID's on sections*/
+    background-image: url("/health_plans/shared/reskin_img/main_hero.jpg");
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1920px;
+    margin: auto; }
+  #elderCareContact {
+    background-image: url("/health_plans/shared/reskin_img/eldercare_contact_hero.jpg"); }
+  .hero__inner {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    height: 100%; }
+  .hero__inner--title {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    max-width: 55%; }
+    .hero__inner--title h2 {
+      margin: 0; }
+  .hero__inner--breadcrumb {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+    max-width: 45%; }
+    .hero__inner--breadcrumb p {
+      margin: 0;
+      font-size: 18px; } }
+
+@media (min-width: 1300px) {
+  .hero {
+    height: 400px; } }
+
+@media (max-width: 900px) {
+  .hero__inner {
+    padding: 0 5%; }
+  .hero__inner--title,
+  .hero__inner--breadcrumb {
+    padding-left: 15px; } }
+
+.breadcrumb {
+  background-color: transparent !important;
+  color: #1a2857 !important;
+  font-weight: bold !important;
+  text-decoration: none !important; }
+
+/****
+Individual page hero images
+*****/
+#eventsHero {
+  background-image: url("../reskin_images/events__hero.jpg"); }
+
+.footer__cta {
+  width: 100%;
+  background-color: #1a2857; }
+  .footer__cta h2 {
+    color: #FFF;
+    font-weight: 500; }
+  .footer__cta p {
+    color: #FFF; }
+
+@media (min-width: 768px) {
+  .footer__cta--button {
+    height: 140px; }
+    .footer__cta--button .btn__container {
+      text-align: right; } }
+
+.footer__cta--button .main__button {
+  background-color: #FFF;
+  color: #1a2857; }
+
+.footer__cta--button .main__button:hover {
+  background-color: #DADADA !important; }
+
+@media (max-width: 768px) {
+  .footer__cta--button .btn__container {
+    text-align: center;
+    margin-bottom: 20px; } }
+
+/* Scss Document */
+.divided__box {
+  text-align: center;
+  font-size: 16px; }
+  .divided__box p {
+    background-color: #1a2857;
+    color: #FFF;
+    padding: 7px; }
+  .divided__box a {
+    color: #1a2857;
+    text-decoration: underline;
+    padding: 0; }
+
+@media (min-width: 768px) {
+  .page__sidebar {
+    /**remove defaults**/
+    position: static;
+    margin: 0px 0px 20px 0px;
+    vertical-align: initial;
+    display: block; }
+    .page__sidebar button,
+    .page__sidebar h2,
+    .page__sidebar hr {
+      display: none; }
+    .page__sidebar ul {
+      /**remove defaults**/
+      display: block;
+      position: static;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      padding: 0;
+      float: none;
+      background-color: #F0F0F0; }
+      .page__sidebar ul li {
+        /**remove defaults**/
+        list-style: none;
+        float: none;
+        color: #1a2857;
+        border-bottom: 1px solid #DADADA;
+        padding: 12px 0; }
+        .page__sidebar ul li a {
+          color: inherit;
+          background-color: inherit;
+          text-decoration: none;
+          font-weight: 600;
+          white-space: normal; }
+      .page__sidebar ul li:last-child {
+        border-bottom: none; }
+      .page__sidebar ul li:hover,
+      .page__sidebar ul li:hover a {
+        background-color: #1a2857;
+        color: #FFF;
+        border-radius: 4px; } }
+
+@media (max-width: 768px) {
+  .page__sidebar {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center; }
+    .page__sidebar button {
+      float: none !important;
+      width: 90%;
+      border-radius: 12px !important;
+      border-color: #1a2857;
+      color: #DADADA;
+      text-align: left; }
+      .page__sidebar button span {
+        float: right; }
+    .page__sidebar h2 {
+      margin-left: 5%;
+      text-align: left;
+      margin-bottom: 0; }
+      .page__sidebar h2 span {
+        font-weight: 500; }
+    .page__sidebar hr {
+      width: 75px;
+      margin-top: 0;
+      margin-left: 5%;
+      border-width: 1px;
+      border-color: #1a2857; }
+    .page__sidebar ul {
+      width: 90%;
+      left: 5%;
+      border-radius: 12px; }
+    .page__sidebar li {
+      text-align: center;
+      list-style-type: none;
+      border-bottom: 1px solid #F0F0F0;
+      padding: 7px 0; }
+    .page__sidebar li:last-child {
+      border-bottom: 0; } }
+
+/***Triple Column Table layout****/
+.table__header {
+  text-align: center;
+  background-color: #1a2857;
+  padding: 15px 15px; }
+  .table__header h3 {
+    color: #FFF;
+    background-color: #1a2857;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500; }
+  .table__header p {
+    margin-bottom: 0;
+    color: #FFF; }
+  @media (max-width: 500px) {
+    .table__header {
+      padding: 10px 3px; }
+      .table__header h3 {
+        font-size: 15px; } }
+
+.table__white {
+  text-align: center;
+  padding: 15px; }
+  .table__white p {
+    margin: 0; }
+
+.table__grey {
+  text-align: center;
+  padding: 15px;
+  background-color: #F0F0F0; }
+  .table__grey p {
+    margin: 0; }
+
+@media (max-width: 500px) {
+  .table__white p,
+  .table__grey p {
+    font-size: 11px; } }
+
+@media (max-width: 500px) {
+  .table__single p {
+    font-size: 16px !important; }
+  .table__single h3 {
+    font-size: 20px !important; } }
+
+@media (max-width: 768px) {
+  .page__body input,
+  .page__body textarea {
+    border: 1px solid #DADADA; }
+  .page__body .form__btn {
+    margin-bottom: 5px; } }
+
+/****************
+Pages
+****************/
+/*Main Pages*/
+/*******************************
+HOME PAGE
+*******************************/
+.home__wrapper {
+  background-image: url("/health_plans/shared/reskin_img/home_hero.jpg");
+  background-size: 1920px 589px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #F0F0F0;
+  max-width: 1920px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto; }
+  .home__wrapper h1 {
+    font-size: 40px;
+    color: #1a2857 !important; }
+
+
+#individualWrapper {
+  background-image: url("/health_plans/shared/reskin_img/individual_hero.jpg");
+  background-position: right top; }
+  
+@media screen and (max-width:770px){
+  #individualWrapper {
+  background-image: none; }
+}
+
+#medicareWrapper {
+  background-image: url("/health_plans/shared/reskin_img/medicare_hero.jpg"); }
+
+#healthplanWrapper {
+  background-image: url("/health_plans/shared/reskin_img/healthplans_hero.jpg"); }
+
+.home__cta--container {
+  margin-top: 110px; }
+  .home__cta--container img {
+    width: 100%; }
+
+.home__header-left {
+  margin-top: 80px; }
+  .home__header-left h1 {
+    color: #000;
+    line-height: 1.3em;
+    margin-top: 50px; }
+  .home__header-left p {
+    margin: 25px 0; }
+  .home__header-left button {
+    background-color: #1a2857;
+    color: #FFF;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; }
+  .home__header-left button i {
+    padding-left: 10px; }
+
+.home__header-right {
+  margin-top: 90px; }
+  .home__header-right ul {
+    width: 60%;
+    margin-left: auto;
+    text-align: left;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #d6d6d6; }
+    .home__header-right ul li {
+      list-style-type: none;
+      border-top: 1px solid #d6d6d6;
+      border-left: 1px solid #d6d6d6;
+      border-right: 1px solid #d6d6d6;
+      color: #1a2857;
+      position: relative;
+      font-size: 18px; }
+      .home__header-right ul li span {
+        position: absolute;
+        right: 20px;
+        display: none; }
+      .home__header-right ul li:hover {
+        background-color: #1a2857;
+        color: #FFF; }
+        .home__header-right ul li:hover a {
+          color: #FFF !important; }
+  .home__header-right a {
+    color: #1a2857;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0 18px 25px; }
+  @media (max-width: 770px) {
+    .home__header-right a {
+      color: #FFF; } }
+  .home__header-right li:hover span {
+    display: inline-block; }
+  .home__header-right li span {
+    position: absolute;
+    right: 20px;
+    display: none; }
+  .home__header-right li:hover span {
+    display: inline-block; }
+
+.block-cta__item {
+  margin-bottom: 20px; }
+
+.block-cta__inner {
+  height: 240px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 1.2px solid #DADADA; }
+  .block-cta__inner h3 {
+    margin: 0;
+    color: #1a2857; }
+
+#home-cta1 {
+  background-image: url("/health_plans/shared/reskin_img/home_cta-1.jpg"); }
+
+#home-cta2 {
+  background-image: url("/health_plans/shared/reskin_img/home_cta-2.jpg"); }
+
+#home-cta3 {
+  background-image: url("/health_plans/shared/reskin_img/home_cta-3.jpg"); }
+
+#individual-cta1 {
+  background-image: url("/health_plans/shared/reskin_img/individual_cta-1.jpg"); }
+
+#individual-cta2 {
+  background-image: url("/health_plans/shared/reskin_img/individual_cta-2.jpg"); }
+
+#individual-cta3 {
+  background-image: url("/health_plans/shared/reskin_img/individual_cta-3.jpg"); }
+
+#healthplans-cta1 {
+  background-image: url("/health_plans/shared/reskin_img/healthplans_cta-1.jpg"); }
+
+#healthplans-cta2 {
+  background-image: url("/health_plans/shared/reskin_img/healthplans_cta-2.jpg"); }
+
+#healthplans-cta3 {
+  background-image: url("/health_plans/shared/reskin_img/healthplans_cta-3.jpg"); }
+
+#medicare-cta1 {
+  background-image: url("/health_plans/shared/reskin_img/medicare_cta_top-1.jpg"); }
+
+#medicare-cta2 {
+  background-image: url("/health_plans/shared/reskin_img/medicare_cta_top-2.jpg"); }
+
+#medicare-cta3 {
+  background-image: url("/health_plans/shared/reskin_img/medicare_cta_top-3.jpg"); }
+
+@media (max-width: 1000px) {
+  .block-cta__inner {
+    height: 180px; } }
+
+@media (max-width: 768px) {
+  .block-cta__inner {
+    height: 220px; } }
+
+@media (max-width: 500px) {
+  .block-cta__inner {
+    height: 150px; } }
+
+@media (min-width: 800px) {
+  .home__body {
+    position: relative;
+    margin-top: 25px; }
+    .home__body .home__body--text {
+      max-width: 57%;
+      z-index: 2; }
+    .home__body .home--coverage {
+      position: absolute;
+      top: 22px;
+      right: 0;
+      max-width: 43%; }
+      .home__body .home--coverage h2 {
+        margin-top: 0;
+        margin-bottom: 30px; }
+      .home__body .home--coverage img {
+        max-width: 100%; } }
+
+@media (max-width: 1600px) {
+  .home__header-right ul {
+    width: 75%; }
+  .home__wrapper {
+    background-size: auto 550px; }
+  .home__cta--container {
+    margin-top: 75px; }
+  .home__header-left h1 {
+    margin-top: 30px; } }
+
+@media (max-width: 900px) {
+  .home__header-right ul {
+    width: 90%;
+    border: none; }
+  .home__header-right li {
+    font-size: 18px;
+    padding-left: 18px; } }
+
+@media (max-width: 770px) {
+  .home__cta--container {
+    margin-top: 30px; }
+  .home__header-left button {
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px 15px;
+    margin-left: 5%; }
+  .home__header-left h1 {
+    width: 90%;
+    font-size: 32px; }
+  .home__wrapper {
+    background-image: none; }
+   .hero-home__wrapper {
+    display: none; }
+  .home__header-row {
+    margin-top: 20px; }
+  .home__header-left {
+    display: none; }
+  .home__header-right {
+    margin-top: 20px;
+    width: 100%; }
+  .home__header-right ul {
+    width: 92%;
+    margin-left: 4%;
+    background-color: rgba(255, 255, 255, 0); }
+  .home__header-right li {
+    color: #FFF;
+    background-color: #1a2857;
+    font-size: 18px;
+    margin: 10px 0; }
+  .home__header-right li span {
+    display: inline-block; }
+  .home__header-right li span i {
+    color: #FFF; }
+  .home--coverage img {
+    max-width: 300px; } }
+
+@media (max-width: 350px) {
+  .home__header-right li {
+    font-size: 14px; } }
+
+@media (min-width: 768px) {
+  .hub__wrapper {
+    background-image: url("/health_plans/shared/reskin_img/hub_hero.jpg");
+    background-size: 1920px 897px;
+    background-position: center top;
+    background-repeat: no-repeat; } }
+
+.hub__wrapper {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.hub__query--row {
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  .hub__query--row h3 {
+    margin-top: 0;
+    margin-bottom: 10px; }
+  @media (max-width: 992px) {
+    .hub__query--row .btn__container {
+      margin-top: 20px; } }
+
+.hub__query--address {
+  margin-bottom: 20px; }
+  .hub__query--address input {
+    background-color: #FFF;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    float: left;
+    width: 100%; }
+  .hub__query--address p {
+    float: left;
+    margin-left: 20px; }
+  .hub__query--address input:focus {
+    border-right: 1px solid #1a2857; }
+  .hub__query--address span {
+    background-color: #FFF;
+    border-left: 0; }
+
+.hub__query--location > div,
+.hub__query--location button,
+.hub__query--location ul {
+  width: 100%; }
+
+.hub__query--location option:after {
+  content: "Hello"; }
+
+.hub__body {
+  margin-bottom: 75px; }
+
+.hub__item--container {
+  text-align: center;
+  padding: 40px 30px; }
+  .hub__item--container img {
+    max-height: 82px;
+    max-width: 100%; }
+  .hub__item--container a {
+    text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .hub__item--container img {
+    padding: 10px 0; } }
+
+.hub__item--blue {
+  background-color: rgba(26, 40, 87, 0.9);
+  color: #FFF; }
+  .hub__item--blue .main__button {
+    background-color: transparent;
+    border-color: #FFF !important;
+    padding: 15px 50px; }
+
+.hub__item--white {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #000; }
+  .hub__item--white strong {
+    color: #1a2857; }
+  .hub__item--white .main__button {
+    background-color: transparent;
+    color: #1a2857;
+    padding: 15px 50px; }
+  .hub__item--white .main__button:hover {
+    background-color: #1a2857 !important;
+    color: #FFF !important; }
+
+@media (max-width: 768px) {
+  .hub__item--blue {
+    background-color: #1a2857; }
+  .hub__item--white {
+    background-color: transparent; }
+  .hub__wrapper {
+    background-color: #F0F0F0; }
+  .hub__item--container {
+    padding: 30px 0; }
+  .hub__query--row {
+    margin-top: 80px;
+    margin-bottom: 20px; }
+  .hub__query--address input {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px; } }
+
+.discount__row {
+  border: 1px solid #DADADA;
+  padding: 30px;
+  margin-bottom: 30px; }
+  .discount__row img {
+    max-width: 100%; }
+  @media (max-width: 768px) {
+    .discount__row {
+      border-right: none;
+      border-left: none;
+      border-top: none; } }
+
+.advantage__col {
+  text-align: center; }
+  .advantage__col img {
+    max-width: 100%; }
+  .advantage__col h4 {
+    background-color: #1a2857;
+    color: #FFF;
+    margin-top: 0;
+    padding: 10px 0;
+    font-weight: normal; }
+    .advantage__col h4 a {
+      color: #FFF; }
+  .advantage__col p {
+    color: #1a2857;
+    font-weight: bold; }
+
+.advantage__btn {
+  font-weight: 500;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.inner__table--item {
+  margin-bottom: 40px;
+  border: 1px solid #DADADA; }
+  .inner__table--item h4 {
+    background-color: #1a2857;
+    color: #FFF;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin-top: 0; }
+  .inner__table--item p {
+    padding-left: 30px;
+    margin-bottom: 7px; }
+  .inner__table--item h6 {
+    padding-left: 30px;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 15px; }
+  @media (min-width: 900px) {
+    .inner__table--item {
+      min-height: 1100px; } }
+
+.inner__body--footer {
+  background-color: #F0F0F0;
+  padding: 35px 0; }
+  .inner__body--footer p {
+    margin-bottom: 7px; }
+  .inner__body--footer h6 {
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 15px; }
+
+/* Scss Document */
+.title {
+  margin: 0 !important; }
+
+.boards__column {
+  height: 300px;
+  border: 1px solid grey; }
+
+.boards__column:hover {
+  background-color: #061b5c;
+  color: #FFF; }
+
+.boards__title {
+  margin: auto;
+  text-align: center; }
+  .boards__title h3 {
+    margin-top: 0; }
+
+.boards__anchor {
+  display: block;
+  height: 100%; }
+
+.board__row {
+  border: 1px solid grey;
+  width: 100%;
+  height: 150px;
+  text-align: center; }
+  .board__row h3 {
+    margin-top: 0; }
+  .board__row p {
+    padding-right: 10px;
+    padding-left: 10px; }
+
+.grid__column {
+  padding: 0px; }
+
+.board__row:hover {
+  color: #fff;
+  background-color: #061b5c; }
+
+a:hover {
+  text-decoration: none !important; }
+
+@media (max-width: 767px) {
+  .boards__column {
+    height: 150px; } }
+
+.group__container {
+  margin: 40px 0;
+  margin-top: 0; }
+
+.group__sidebar--container:nth-child(1) {
+  background-image: url("/health_plans/shared/reskin_img/group-sidebar1.png"); }
+
+.group__sidebar--container:nth-child(2) {
+  background-image: url("/health_plans/shared/reskin_img/group-sidebar2.png"); }
+
+#groupInd {
+  background-image: url("/health_plans/shared/reskin_img/group_individual.png"); }
+
+#groupMed {
+  background-image: url("/health_plans/shared/reskin_img/group-sidebar2.png"); }
+
+#groupPlan {
+  background-image: url("/health_plans/shared/reskin_img/group_plan.png"); }
+
+#groupProvider {
+  background-image: url("/health_plans/shared/reskin_img/group_provider.png"); }
+
+#groupFAQ {
+  background-image: url("/health_plans/shared/reskin_img/group_faq.png"); }
+
+#groupApply {
+  background-image: url("/health_plans/shared/reskin_img/group_apply.png"); }
+
+.group__sidebar--container {
+  min-height: 190px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .group__sidebar--container h3 {
+    color: #1a2857;
+    margin-top: 0; }
+  .group__sidebar--container h6 {
+    font-weight: 500;
+    position: absolute;
+    top: 40px;
+    font-size: 16px; }
+  .group__sidebar--container p {
+    position: absolute;
+    bottom: 15px;
+    margin-bottom: 0; }
+    .group__sidebar--container p a {
+      text-decoration: underline;
+      color: #1a2857;
+      font-weight: 700; }
+  @media (max-width: 992px) {
+    .group__sidebar--container h6 {
+      top: 60px; } }
+  @media (max-width: 500px) {
+    .group__sidebar--container {
+      min-height: 140px; }
+      .group__sidebar--container h6 {
+        top: 30px; } }
+
+.group__body--box > div {
+  border: 1px solid #DADADA;
+  padding: 15px 0px 15px 80px; }
+
+.group__body--box h2 {
+  margin-bottom: 20px;
+  font-size: 26px; }
+
+@media (max-width: 992px) {
+  .group__body--box {
+    margin-bottom: 30px; }
+    .group__body--box > div {
+      padding: 15px 0px 15px 30px; } }
+
+@media (max-width: 500px) {
+  .group__body--box > div {
+    border: none;
+    padding: 0 0 0 15px; } }
+    .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: rgba(255,255,255, 0.8);
+      z-index: 99;
+      /* display: none; */
+  }
+
+  .modalPopup {
+      position: fixed;
+      width: 100%;
+      background-color: #1a2857;
+      top: 50%;
+      -webkit-transform: translatey(-50%);
+          -ms-transform: translatey(-50%);
+              transform: translatey(-50%);
+      left: 0;
+      z-index: 999;
+      height: 200px;
+      padding: 25px;
+  }
+  .innerModal {
+      position: relative;
+      height: 100%;
+  }
+  p.code {
+      font-size: 12px;
+      color: white;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      margin: 0;
+  }
+
+  h3.notice {
+      font-size: 22px;
+      color: white;
+      margin: auto;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translatey(-50%);
+          -ms-transform: translatey(-50%);
+              transform: translatey(-50%);
+      text-align: center;
+  }
+  @media (max-width:520px) {
+      h3.notice {
+          font-size: 16px;
+          line-height: 22px;
+      }
+      p.code {
+        font-size: 10px;
+      }
+  }
+
+  .telephone:hover {
+      text-decoration: underline !important;
+  }
+
+  #closeBtn {
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-family: Montserrat;
+      cursor: pointer;
+  }
+
+/** COVID19 3.31.2020 **/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 993px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+img.logo--mobile.vertically-center {
+    top: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+        transform: none;
+    width: 100%;
+    height: auto;
+}
+
+
+.footer__bottom-container {
+    padding: 25px 0 15px;
+}
+
+a.gynat-toggle {
+    padding: 2rem 0;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+a.gynat-toggle img {
+    width: 100px;
+    height: 50px;
+    margin-right: 2rem;
+    border-radius: 25px;
+    background: #1d2957;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.open-toggle::before {
+    content: "Try our COVID-19 Symptom Checker";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #192757;
+    height: 7rem;
+    width: 100%;
+    z-index: -10000;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 0 calc((100vw - 80%) / 2);
+    font-weight: bold;
+}
+
+@media (max-width: 993px) {
+	
+	/*a.logo--mobile {*/
+	/*    display: -webkit-box;*/
+	/*    display: flex;*/
+	/*    height: 100%;*/
+	/*    -webkit-box-align: center;*/
+	/*    align-items: center;*/
+	/*    width: 180px;*/
+	/*}*/
+
+    .open-toggle::before,
+    .open-toggle::after {
+        content: none;
+    }
+}
+
+.open-toggle::after {
+    content: "";
+    background-image: url(https://hf-emails.s3.amazonaws.com/COVID/icon.svg);
+    background-size: 80%;
+    background-color: #608bc8;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 79px;
+    height: 40px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 34px;
+}
+
+.gyant-animation-heartbeat {
+    -webkit-animation: none !important;
+    animation: none !important;
+}
+
+.hfhp-2020 .news--item:nth-of-type(7) {
+    display: none;
+}
+.grecaptcha-badge {
+    left: 0;
+    right: auto;
+    width: 70px !important;
+    overflow: hidden;
+    z-index: 100000;
+}
+.grecaptcha-badge:hover {
+    width: auto !important;
+}
+.hfhp-2020 .home__wrapper {
+    background: none;
+  	overflow-x: hidden;
+}
+.hfhp-2020 .home__wrapper .home__header-left h2.h1 {
+    color: #ffffff;
+    width: 80%;
+    margin: 0;
+}
+
+.hfhp-2020 .home__header-left p {
+    font-size: 1.75rem;
+    line-height: 1.75;
+    color: #fff;
+    font-weight: bold;
+}
+
+.block-cta__inner {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.02);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.02);
+}
+
+.hfhp-2020 .home__wrapper .seminar__column {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.hfhp-2020 .home__wrapper .seminar__column h2 {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1;
+    padding: 1rem;
+    width: 100%;
+    background: #192757;
+    text-align: center;
+    color: #fff;
+}
+.hfhp-2020 .home__wrapper .home__header-left,
+.hfhp-2020 .home__wrapper .home__header-right {
+    float: none;
+}
+@media (min-width: 993px) {
+    .hfhp-2020 .home__wrapper .home__header-right ul {
+        margin: 0;
+        margin-left: auto;
+    }
+    .hfhp-2020 .home__wrapper .row.home__header-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        height: 100%;
+        margin: 0 calc((100vw - 80% + 30px) / -2) -10rem;
+        background-image: url(/health_plans/shared/images/HFH20-013_HF-Covid-Banner_HFHP.jpg);
+        background-size: cover;
+        padding: 5rem calc((100vw - 80%) / 2) 20rem;
+    }
+    .hfhp-2020 .home__wrapper .row.home__header-row .col-sm-6 {
+        float: none;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+        max-width: 50%;
+    }
+}
+@media (max-width: 993px) {
+    .news--item {
+        /* height: 100%; */
+        width: 100%;
+        /* margin: 0; */
+    }
+    .hfhp-2020 .home__wrapper .home__header-right {
+        max-width: 100%;
+        width: 100%;
+        background: #fff;
+        padding: 1.5rem;
+    }
+    .hfhp-2020 .home__wrapper .home__header-right ul {
+        width: 100%;
+        margin: 0;
+        background: none;
+    }
+    .hfhp-2020 .home__wrapper .home__header-left {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .hfhp-2020 .home__wrapper .row.home__header-row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        background-size: 200vw auto;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-image: url(/health_plans/shared/images/HFH20-013_HF-Covid-Banner_HFHP.jpg);
+        margin: 0 calc((100vw - 80%) / -2) -10rem;
+        padding: 20vw calc((100vw - 80%) / 2) 5rem;
+    }
+    .hfhp-2020 .home__wrapper .home__wrapper {
+        margin-top: -10px;
+    }
+    .hfhp-2020 .home__wrapper .home__header-right ul li {
+        border: none;
+        color: #fff;
+        background-color: #1a2857;
+    }
+    .hfhp-2020 .home__wrapper .home__header-right ul li a {
+        background-color: #1a2857;
+        color: #fff;
+    }
+}
+@media (max-width: 620px) {
+	.body__wrapper {
+    	padding-top: 65px;
+	}
+  .body__wrapper-lp {
+      padding-top: 90px !important;
+  }
+    .home__header-right a {
+        padding: 18px 30px 18px 0;
+        font-size: 3.5vw !important;
+    }
+}
+.hfhp-2020 .home__wrapper .row.home__news--row {
+    display: none;
+}
+.col-sm-6.text-left.home__header-left .hero-cta {
+    display: block;
+}
+.col-sm-6.text-left.home__header-left .hero-ie {
+    display: none;
+}
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .open-toggle {
+        display: none !important;
+    }
+    .col-sm-6.text-left.home__header-left .hero-cta {
+        display: none;
+    }
+    .col-sm-6.text-left.home__header-left .hero-ie {
+        display: block;
+    }
+}
+
+footer {
+	border: none;
+}
+
+.hfhp-2020 .home__cta--container {
+	margin-top: 0;
+}
+
+.home__header-right a {
+	font-weight: bold;
+}
+  
+/* blog cta and fix height of banner hero for helpful info page */
+#blogCTA {
+	position: absolute;
+    top: 40%;
+    left: 15px;
+    max-width: 55%;
+}
+  
+#textCTA {
+	font-size: 12px;
+  	width: 70%;
+    line-height: 15px;
+  	margin-top: 5px;
+}
+
+/* mobile */  
+@media screen and (max-width: 425px) {  
+  #helpfulBanner {
+      height: 30vh;
+  }
+  
+  #blogCTA {
+    top: 3.5%;
+    min-width: 80%;
+  }
+  
+  #textCTA {
+  	width: 100%;
+  }
+  
+  .hero-title {
+    padding: 5% 5% !important;
+  }
+}
+
+/*new reskin css*/
+.benefitsInclude-card {
+  padding: 24px 14px;
+  height: 180px !important;
+}
+
+.benefitsInclude-icon {
+  margin-bottom: 14px;
+}
+
+.servicesAreas-card {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.hr-hplans {
+  border-top: 1px solid #333333;
+}
+
+.section-hfplans {
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 425px) {
+  .servicesAreas-card {
+    flex-flow: column;
+  }
+
+  .servicesAreas-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+/*landing page /local/index.cfm*/
+#lpBanner {
+  margin: -2px;
+}
+
+@media screen and (max-width: 900px) {
+    #lpBanner {
+      margin-top: 90px;
+  }
+}
+
+#lpBanner img {
+  max-width: 100%; height: auto;
+}
+
+.plans-card {
+  background-color: #D7D5D7;
+  display: flex;
+}
+
+.plans-card p {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.plans-card.blue {
+  border: solid 1px #4e7fa3;
+  margin-bottom: 30px;
+}
+
+.plans-card.green {
+  border: solid 1px #477f67;
+  margin-bottom: 30px;
+}
+
+.plans-card.orange {
+  border: solid 1px #a15b38;
+  margin-bottom: 30px;
+}
+
+*.hp-blue {
+  color: #4e7fa3;
+}
+
+*.hp-green {
+  color: #477f67;
+}
+
+*.hp-orange {
+  color: #a15b38;
+}
+
+.testimonial-card {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  padding-bottom: 0;
+  min-height: 235px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #adadad;
+  margin-bottom: 30px;
+}
+
+span.testimonial-card-text {
+  font-style: italic;
+  color: #1a2857;
+}
+
+.testimonial-card.b-blue {
+  border-bottom: solid 35px #9CCBE9;
+}
+
+.testimonial-card.b-green {
+  border-bottom: solid 35px #7DB29C;
+}
+
+#followUS-FB {
+  margin-bottom: 90px;
+}
+
+#followUS-FB #iconFB{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+#followUS-FB #iconFB p { 
+  margin: auto 10px;
+}
+
+/*page enroll-now.cfm*/
+.enrollOptions-card {
+  padding: 24px 24px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.enrollOptions-card.card-1 {
+  height: 430px;
+  height: calc(410px + (400 - 410) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.enrollOptions-card.card-2 {
+  height: 500px;
+  height: calc(500px + (440 - 500) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.enrollOptions-card.card-3 {
+  height: 450px;
+  height: calc(450px + (370 - 450) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.enrollOptions-cta {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 10px;
+  font-size: 22px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+
+  width: calc(100% - 48px);
+}
+
+.enrollOptions-phoneNumber, .enrollOptions-address, .enrollOptions-link {
+  color: #192856;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 19px;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.enrollOptions-address {
+  text-align: left;
+}
+
+.enrollOptions-print {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.enrollOptions-phoneNumber::before, .phoneIcon::before {
+  content: url("/health_plans/shared/reskin_img/small-phone.png")
+}
+
+.enrollOptions-address::before {
+  content: url("/health_plans/shared/reskin_img/small-location.png")
+}
+
+.enrollOptions-print::before {
+  content: url("/health_plans/shared/reskin_img/printer.png");
+  position: absolute;
+  left: 20px;
+}
+
+.enrollOptions-link::before {
+  content: url("/health_plans/shared/reskin_img/small-link-dblue.png");
+}
+
+.enrollOptions-wrapperAlt-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #E2E0E1;
+}
+
+.enrollOptions-footer {
+  padding: 24px 12px;
+  margin: 0;
+  color: black;
+  font-weight: 900;
+}
+
+.callMedicare-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .callMedicare-wrapper {
+    display: block;
+  }
+}
+
+.callMedicare-wrapper span {
+  margin-left: 15px;
+}
+
+.font-light {
+  font-weight: 100 !important;
+}
+
+strong.hf-blue {
+  color: #1a2857;
+}
+
+a.link-underline  {
+  text-decoration: underline;
+  color: #1a2857;
+  font-weight: 400;
+}
+
+.premiumOptions-link {
+  font-size: 21px;
+  font-weight: 400;
+  color: #1a2857;
+  text-decoration: underline;
+}
+
+.premiumOptions-link::before {
+   content: url("/health_plans/shared/reskin_img/icons-download.png");
+   margin-right: 10px;
+}
+
+#noteEmployerGroup {
+  font-size: 21px;
+  margin-bottom: 15px !important;
+}
+
+#enrollNow-Banner, #familyPictureBanner {
+  background-image: url(/health_plans/shared/reskin_img/medicare_inner_hero.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1920px;
+  margin: auto;
+}
+
+#familyPictureBanner {
+  background-image: url(/health_plans/shared/reskin_img/main_hero.jpg) !important;
+}
+
+@media screen and (max-width: 600px) {
+  #enrollNow-Banner, #familyPictureBanner {
+    height: 150px !important;
+  }
+}
+
+/*our medicare plans reskin*/
+#body-bgColorWhite {
+  background-color: #FEFFFE !important;
+}
+
+#body-bgColorBabyBlue {
+  background-color: #F0F0F0 !important;
+}
+
+@media (min-width: 992px) {
+  .col-custom-5 {
+    width: 20%;
+  }
+}
+
+.ourMedicarePlans-cards-1, .ourMedicarePlans-cards-3, .ourMedicarePlans-card-4 {
+  height: 200px;
+  padding: 24px 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.02);
+}
+
+.ourMedicarePlans-cards-2 {
+  padding: 40px 50px;
+}
+
+.ourMedicarePlans-cards-2 img {
+  margin-bottom: 20px;
+}
+
+.ourMericarePlans-cards-2-left {
+  border-right: solid 1px #1A2857;
+  border-top: solid 1px #1a2857;
+}
+
+.ourMericarePlans-cards-2-right {
+  border-top: solid 1px #1a2857;
+}
+
+.ourMedicarePlans-cards-3 {
+  height: 230px;
+  background-color: white !important;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourMedicarePlans-cards-3 span {
+  text-decoration: underline;
+  color: #1a2857;
+}
+
+.ourMedicarePlans-card-4 {
+  background-color: white !important;
+  margin: 40px auto;
+  height: 230px;
+
+
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.download-icon::before {
+  content: url("/health_plans/shared/reskin_img/icons-download.png");
+  margin: auto 5px;
+}
+
+.medicarePlans-cardsSE-wrapper div.p-20-70:nth-child(1) {
+    border-right: solid 1px #1a2857;
+}
+
+.sunnyE-title {
+  height: 50px;
+}
+
+@media screen and (min-width: 600px) {
+  .medicarePlans-mainSection-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .medicarePlans-cardsSE-wrapper {
+    display: flex;
+    align-items: flex-start;
+    border-top: solid 1px #1a2857;
+    border-bottom: solid 1px #1a2857;
+  } 
+
+  .ourMedicarePlans-card-4 {
+    display: flex;
+    align-items: center;
+    height: auto !important;
+  }
+
+  .ourMedicarePlans-card-4 div p {
+    margin-bottom: 0;
+  }
+
+  .p-20-70 {
+    padding: 20px 70px;
+  }
+
+  .alignRight-desktop {
+    text-align: right;
+  }
+
+  .alignLeft-desktop {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ourMedicarePlans-cards-2 {
+    text-align: center !important;
+  }
+
+  .ourMedicarePlans-cards-3 {
+    padding: auto 15px;
+    height: 270px !important;
+  }
+
+  .mb-20-sm {
+    margin-bottom: 20px;
+  }
+}
+
+/*helpful information page*/
+
+.helpfulInfo-card {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  padding: 15px;
+  border: solid 2px #F0F0F0;
+  margin-top: 40px;
+}
+
+.helpfulInfo-card-2 {
+  width: 100%;
+  padding: 15px;
+  border-top: solid 2px #F0F0F0;
+  border-right: solid 2px #F0F0F0;
+  border-left: solid 2px #F0F0F0;
+  margin-top: 40px;
+}
+
+.border-img {
+  border: solid 3px #f0f0f0;
+}
+
+.ctaHelpfulInfo {
+   border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 8px 20px;
+  color: white !important;
+  text-decoration: none !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.phoneIcon {
+  color: #192856;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 19px;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+}
+
+.helpfulInfo-card-2-footer {
+  background-color: #E2E0E1;
+  padding: 12px;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+summary.summaryHF {
+  color: #1a2857;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+hr.hr-CallTollFree {
+  position: relative; 
+  top: 2.4em;
+}
+
+@media screen and (min-width: 600px) {
+  .helpfulInfo-card, .helpfulInfo-card-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-desktop {
+    display: flex;
+  }
+
+  .flex-center-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-start-desktop {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .flex-baseline-desktop {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .helpfulInfo-card-2-footer .border-right, .border-right {
+    border-right: solid 1px #333333;
+  }
+
+  .py-auto-desktop {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .helpfulInfo-card {
+    text-align: center;
+    min-height: 380px;
+  }
+
+  .helpfulInfo-card-2 {
+    text-align: center;
+    height: 283px;  
+  }
+
+  .phoneIcon {
+    justify-content: center;
+  }
+
+  hr.hr-CallTollFree {
+    top: 0em
+  }
+
+  .text-center-sm {
+    text-align: center;
+  }
+}
+
+/*improve your health page*/
+
+.percentage-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage-card p {
+  margin: auto;
+  font-size: 20px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .align-self-stretch-lg {
+    align-self: stretch;
+  }
+
+  .mt-0-lg {
+    margin-top: 0;
+  }
+}
+
+/*watch online seminar*/
+
+.percentage-card p.seminar-card {
+  margin: auto 15px;
+  font-size: 20px;
+}
+
+.wrapper-contact-onlineSeminar input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+
+.wrapper-contact-onlineSeminar #consultation-submit {
+  padding: 10px !important;
+}
+
+.wrapper-contact-onlineSeminar #consultation-submit:hover {
+  border: 1px solid #1a2857 !important;
+  background-color: #1a2857 !important;
+  color: #FFF !important;
+}
+
+#enrollNow-onlineSeminarCTA {
+  width: 30rem !important;
+  margin: auto !important;
+}
+
+#seminar-form-container {
+  background-color: #f0f0f0;
+}
+   
+#thankyou {
+  color: white;
+  margin-top: 0 !important;
+}
+
+#video-button-container {
+  margin-bottom: 10rem;
+}
+
+/* medicare */
+
+.bg-white {
+  background-color: white !important;
+}
+
+.benefitsInclude-card.bg-white {
+  height: 200px !important
+}
+
+/* member resources */
+
+.flex {
+  display: flex;
+}
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-header-memberMaterials {
+  background-color: #E1EBEF;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 108%;
+  margin-left: -4%;
+  min-height: 86px;
+}
+
+.col-header-memberMaterials h3 {
+  align-self: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-content-memberMaterials p {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.yearMemberMaterial {
+  background-color: #F0F0F0 !important;
+  padding: 15px;
+  margin: auto;
+}
+
+.yearMemberMaterial span, .col-header-memberMaterials h3 span, 
+.col-content-memberMaterials a.download-icon span {
+  font-weight: lighter;
+}
+
+.col-content-memberMaterials a.download-icon span, p.importantInfo span  {
+  text-decoration: underline white; 
+  color: gray;
+}
+
+#chooseYear-memberResources {
+  display: block;
+}
+
+#chooseYear-memberResources button {
+  background: transparent;
+  padding: 15px;
+  width: 30%;
+  border-radius: 3px;
+  border: 1px solid #1a2857 !important;
+  margin-right: -3px;
+}
+
+#chooseYear-memberResources button.active {
+  background: #E1EBEF;
+}
+
+@media screen and (min-width: 600px) {
+  .flex-lg {
+    display: flex
+  }
+
+  .memberMaterial-Table {
+    min-height: 510px;
+  }
+
+  .col-content-memberMaterials a.download-icon {
+    position: absolute;
+    left: 0;
+  }
+
+  p.importantInfo a.download-icon {
+    margin-left: -30px;
+  }
+
+  #phoneEmail-wrapper-hfAssessment a {
+    justify-content: flex-start !important;
+  }
+
+  #chooseYear-memberResources {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #member-year2019 {
+    display: none
+  }
+}
+
+/* RSVP page */
+.wrapper-rsvpCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #E1EBEF;
+  min-height: 120px;
+  margin: 10px auto;
+}
+
+.wrapper-rsvpCard p {
+  align-self: center;
+  margin: 0;
+}
+
+.wrapper-rsvpCard .wrapper-rsvpField {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper-rsvpCard {
+    flex-direction: column;
+  }
+}
